@@ -22,7 +22,7 @@ app.on('window-all-closed', function() {
 // и будет готов к созданию браузерных окон.
 app.on('ready', function() {
   // Создаем окно браузера.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 800, height: 600, fullscreen: true});
 
   // и загружаем файл index.html нашего веб приложения.
   mainWindow.loadURL('file://' + __dirname + '/index.html');
